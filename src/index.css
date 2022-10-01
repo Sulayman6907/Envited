@@ -2,6 +2,13 @@
 @import "/src/styles/common.css"; /* Define all common css here, dont use magic numbers*/
 @import "/src/styles/login.css"; /* Login css*/
 @import "/src/styles/navbar.css"; /* Navbar css*/
+@import "/src/styles/landing.css"; /* Navbar css*/
+
+
+@font-face {
+  font-family: bold;
+  src: url(/src/fonts/Helvetica-Bold.otf) format(trueType);
+}
 
 body {
   margin: 0;
