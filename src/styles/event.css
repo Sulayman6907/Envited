@@ -1,10 +1,11 @@
 .event-container {
     background-color: #F6F2FF;
     width: 100vw;
-    height: max-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .event-img-container {
@@ -104,7 +105,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .event-container{
         height: max-content;
         align-items: flex-start;
@@ -120,4 +121,4 @@
         margin: 24px 0px !important;
     }
     
-}
+} */
