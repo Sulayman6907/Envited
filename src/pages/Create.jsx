@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { TextInput, DateInput } from "grommet";
+import { Link } from "react-router-dom";
 import { Grommet } from "grommet";
 
-const Events = () => {
+const Create = () => {
   const [eventName, setEventName] = useState("");
   const [hostName, setHostName] = useState("");
   const [location, setLocation] = useState("");
@@ -11,19 +12,16 @@ const Events = () => {
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
 
-  const submit =()=>{
-    localStorage.setItem('eventName', eventName);
-    localStorage.setItem('hostName',hostName);
-    localStorage.setItem('location', location);
-    localStorage.setItem('pictureUrl',pictureUrl);
-    localStorage.setItem('startDate', startDate);
-    localStorage.setItem('endDate',endDate);
+  const submit = () => {
+    localStorage.setItem("eventName", eventName);
+    localStorage.setItem("hostName", hostName);
+    localStorage.setItem("location", location);
+    localStorage.setItem("pictureUrl", pictureUrl);
+    localStorage.setItem("startDate", startDate);
+    localStorage.setItem("endDate", endDate);
+    window.location("/event");
+  };
 
-  }
-  console.log(location);
-  console.log(pictureUrl);
-  console.log(startDate);
-  console.log(endDate);
   const theme = {
     global: {
       colors: {
@@ -44,8 +42,8 @@ const Events = () => {
 
   return (
     <Grommet theme={theme}>
-      <div className="events-container">
-        <div className="event-heading">Enter event details</div>
+      <div className="create-container">
+        <div className="create-heading">Enter event details</div>
         <div className="form-container">
           <TextInput
             placeholder="Event Name"
@@ -103,7 +101,7 @@ const Events = () => {
             focusIndicator="false"
             onChange={(event) => setPictureUrl(event.target.value)}
           />
-          <div className="event-text"> Start Date</div>
+          <div className="create-text"> Start Date</div>
           <DateInput
             format="mm/dd/yyyy"
             value={new Date().toISOString()}
@@ -111,7 +109,7 @@ const Events = () => {
               setStartDate(value);
             }}
           />
-          <div className="event-text"> End Date</div>
+          <div className="create-text"> End Date</div>
           <DateInput
             format="mm/dd/yyyy"
             value={new Date().toISOString()}
@@ -119,11 +117,15 @@ const Events = () => {
               setEndDate(value);
             }}
           />
-          <div className="landing-button" onClick={submit}>Create my event</div>
+          <Link to="/event" style={{textDecoration:"none"}}>
+            <div className="landing-button" onClick={submit}>
+              Create my event
+            </div>
+          </Link>
         </div>
       </div>
     </Grommet>
   );
 };
 
-export default Events;
+export default Create;

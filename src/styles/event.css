@@ -1,0 +1,123 @@
+.event-container {
+    background-color: #F6F2FF;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-img-container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+
+.birthday-img {
+    width: 100%;
+}
+
+.detail-section {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 24px;
+}
+
+.event-name {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #240D57;
+    text-transform: capitalize;
+}
+
+.host-name {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    margin: 16px 0px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.date-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.start-date {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #240D57;
+}
+
+.location-detail {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 24px;
+    color: #240D57;
+}
+
+.end-date {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4F4F4F;
+    margin-top: 6px;
+}
+
+.edit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .event-container{
+        height: max-content;
+        align-items: flex-start;
+        padding-left: 30%;
+        padding-bottom: 50px;
+    }
+    .event-img-container{
+        width: 30%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .detail-section{
+        margin: 24px 0px !important;
+    }
+    
+}

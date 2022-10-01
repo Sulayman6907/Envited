@@ -1,5 +1,7 @@
 @import "/src/styles/landing.css"; /* landing css*/
-@import "/src/styles/events.css"; /* events css*/
+@import "/src/styles/event.css"; /* events css*/
+@import "/src/styles/create.css"; /* create css*/
+
 
 
 @font-face {

@@ -1,4 +1,4 @@
-.events-container {
+.create-container {
     background-color: #F6F2FF;
     width: 100vw;
     height: max-content;
@@ -8,7 +8,7 @@
     padding-top: 60px;
 }
 
-.event-heading {
+.create-heading {
     color: #240D57;
     font-family: Helvetica;
     font-style: normal;
@@ -19,7 +19,7 @@
     max-width: 300px;
 }
 
-.event-text {
+.create-text {
     color: #240D57;
     font-family: Helvetica;
     font-style: normal;
@@ -37,4 +37,10 @@
     align-items: center;
     width: 80%;
     margin :40px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .create-container{
+        height: 100vh;
+    }
 }
