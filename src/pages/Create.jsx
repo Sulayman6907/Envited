@@ -104,7 +104,7 @@ const Create = () => {
           <div className="create-text"> Start Date</div>
           <DateInput
             format="mm/dd/yyyy"
-            value={new Date().toISOString()}
+            value={startDate|| new Date().toISOString()}
             onChange={({ value }) => {
               setStartDate(value);
             }}
@@ -112,12 +112,12 @@ const Create = () => {
           <div className="create-text"> End Date</div>
           <DateInput
             format="mm/dd/yyyy"
-            value={new Date().toISOString()}
+            value={endDate || new Date().toISOString() }
             onChange={({ value }) => {
               setEndDate(value);
             }}
           />
-          <Link to="/event" style={{textDecoration:"none"}}>
+          <Link to="/event" style={{textDecoration:"none", marginTop:"32px"}}>
             <div className="landing-button" onClick={submit}>
               Create my event
             </div>
