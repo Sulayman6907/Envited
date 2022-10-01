@@ -1,0 +1,40 @@
+.events-container {
+    background-color: #F6F2FF;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.event-heading {
+    color: #240D57;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.event-text {
+    color: #240D57;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 300px;
+    margin:12px 0px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin :40px 0px;
+}
